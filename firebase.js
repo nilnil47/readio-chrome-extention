@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "xxxxx",
-  authDomain: "firestore-example-xxxx.firebaseapp.com",
-  databaseURL: "https://firestore-example-xxx.firebaseio.com",
-  projectId: "firestore-example-xxx",
-  storageBucket: "firestore-example-xxx.appspot.com",
-  messagingSenderId: "xxx",
-  appId: "1:xxx:web:xxx"
+    apiKey: "AIzaSyD1sLngjyesF7P9X680xCa5pcWRBFN6Gmo",
+    authDomain: "readio-7d378.firebaseapp.com",
+    projectId: "readio-7d378",
+    storageBucket: "readio-7d378.appspot.com",
+    messagingSenderId: "617401816212",
+    appId: "1:617401816212:web:f33eca0d35a7cc2eae1081",
+    measurementId: "G-S4J6M5F4TC"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -35,7 +35,7 @@ db.collection("cities").doc("LA").set({
 chrome.runtime.onMessage.addListener((msg, sender, resp) => {
 
   if(msg.command == "post"){
-    db.collection("cities").doc("test-doc").set({
+    db.collection("pages").doc("test-doc").set({
         data: msg.data
     })
     .then(function() {
